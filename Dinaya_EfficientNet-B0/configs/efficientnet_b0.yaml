@@ -1,0 +1,12 @@
+model: efficientnet_b0
+img_size: 224
+batch_size: 32
+epochs: 12
+lr: 3e-4
+weight_decay: 1e-4
+patience: 3
+augment: true
+data_root: ../chest_xray
+ckpt: checkpoints/efficientnet_b0_best.pt
+run_dir: runs/effb0_224
+monitor: val_roc_auc
