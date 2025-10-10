@@ -3,17 +3,14 @@ import torch
 
 # --- Dataset and Directory Configuration ---
 
-# >>> ⚠️ IMPORTANT: UPDATE THIS PATH ⚠️ <<<
 # This should point to the parent directory containing 'chest_xray' or the directory
 # containing 'train', 'test', and 'val' folders.
-KAGGLE_DATASET_BASE_PATH = Path("/path/to/your/downloaded/chest-xray-pneumonia")
+KAGGLE_DATASET_BASE_PATH = Path("C:\\Users\\HP\\Desktop\\SLIIT\\Y4 SEM 1\\DL\\Ass\\Assignment\\DL-project\\ViT\\dataset\\chest_xray")
 
-# Assuming the structure is: KAGGLE_DATASET_BASE_PATH / [train|test|val]
+
 TRAIN_DIR = KAGGLE_DATASET_BASE_PATH / "train"
 TEST_DIR = KAGGLE_DATASET_BASE_PATH / "test"
 VAL_DIR = KAGGLE_DATASET_BASE_PATH / "val"
-# Note: The original dataset includes a 'test' set, but for assignment, we'll use 'train' and 'val'
-# You can easily swap VAL_DIR with TEST_DIR if you prefer using the dedicated test set for final evaluation.
 
 # Class names based on the directory structure (NORMAL, PNEUMONIA)
 CLASS_NAMES = {"NORMAL": 0, "PNEUMONIA": 1}

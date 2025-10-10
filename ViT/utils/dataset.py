@@ -1,6 +1,5 @@
 import random
 from pathlib import Path
-from glob import glob
 from typing import List, Tuple
 
 import torch
@@ -10,7 +9,7 @@ from PIL import Image
 import numpy as np
 
 # Import config.py file
-from config import IMG_SIZE, IMAGENET_MEAN, IMAGENET_STD, TRAIN_DIR, TEST_DIR, VAL_DIR, CLASS_NAMES
+from .config import IMG_SIZE, IMAGENET_MEAN, IMAGENET_STD, TRAIN_DIR, TEST_DIR, VAL_DIR, CLASS_NAMES
 
 
 # -------------------- Dataset Class --------------------
