@@ -138,4 +138,4 @@ python main.py  # Choose option 6
 - 📊 **All methods produce realistic results**
 - 💾 **Results saved automatically to CSV**
 
-Your project is **fully functional** with or without GPU acceleration! 🎉
+
