@@ -32,6 +32,7 @@ T_MAX_LR_SCHEDULER_EPOCHS = 20 # Used to calculate steps for CosineAnnealingLR
 
 # Save/Logging
 CHECKPOINT_PATH = 'vit_chest_xray_best.pth'
+CHECKPOINT_PATH_1 = 'vit_chest_xray_best_1.pth'
 
 # ImageNet means and stds for normalization
 IMAGENET_MEAN = [0.485, 0.456, 0.406]
