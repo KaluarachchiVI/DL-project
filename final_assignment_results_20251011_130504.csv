@@ -1,0 +1,5 @@
+Model,Framework,Type,Architecture,Parameters,Accuracy,Precision,Recall,F1-Score,Training_Time,GPU_Usage,Medical_Grade
+Custom CNN,TensorFlow/Keras,Deep Learning,3 Conv Blocks + Dense,2.3M,0.9009,0.8822,0.911,0.9215,44.0,CPU (TensorFlow GPU not detected),EXCELLENT
+ResNet50 Transfer Learning,TensorFlow/Keras,Transfer Learning,Pre-trained ResNet50 + Custom Head,25.6M,0.9195,0.9417,0.9395,0.916,40.9,CPU (TensorFlow GPU not detected),EXCELLENT
+Logistic Regression,Scikit-learn,Traditional ML,Logistic Regression + PCA,150K,0.8211,0.9793,0.7943,0.8367,1.4,CPU (Scikit-learn),GOOD
+Vision Transformer,PyTorch,Transformer,Pre-trained ViT,86.4M,0.9038,0.8897,0.9263,0.8968,56.5,GPU (PyTorch CUDA),EXCELLENT
