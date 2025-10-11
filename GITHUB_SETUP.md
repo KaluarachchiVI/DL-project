@@ -371,4 +371,3 @@ git commit -m "Add GitHub setup guide"
 
 5. **Submit repository URL** for assignment
 
-Your pneumonia detection project is now ready for GitHub and assignment submission! 🎉
