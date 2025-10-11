@@ -25,10 +25,15 @@ NUM_WORKERS = 4
 DEVICE = 'cuda' if torch.cuda.is_available() else 'cpu'
 
 # Hyperparameters
-LEARNING_RATE = 1e-4
+LEARNING_RATE = 1e-4  # Used for the head in Phase 1
 WEIGHT_DECAY = 1e-2
 NUM_EPOCHS = 30
-T_MAX_LR_SCHEDULER_EPOCHS = 20 # Used to calculate steps for CosineAnnealingLR
+T_MAX_LR_SCHEDULER_EPOCHS = 20
+
+# --- Phased Training Configuration ---
+FREEZE_EPOCHS = 5      # New: Number of epochs to train only the head
+FINE_TUNE_LR = 1e-5    # New: Lower LR for training the full model (1e-4 / 10)
+
 
 # Save/Logging
 CHECKPOINT_PATH = 'vit_chest_xray_best.pth'
@@ -37,3 +42,5 @@ CHECKPOINT_PATH_1 = 'vit_chest_xray_best_1.pth'
 # ImageNet means and stds for normalization
 IMAGENET_MEAN = [0.485, 0.456, 0.406]
 IMAGENET_STD = [0.229, 0.224, 0.225]
+
+PRECISION_BOOST_FACTOR = 1  #panelty for false positives
