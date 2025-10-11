@@ -192,4 +192,4 @@ streamlit
 - Use `setup_clean.py` for automated setup
 - All documentation is included in the repository
 
-**Perfect for your deep learning assignment!** 🎉
+
