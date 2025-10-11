@@ -1,0 +1,5 @@
+Model,Framework,Type,Accuracy,Precision,Recall,F1-Score,Training_Time,Parameters,GPU_Status,Medical_Grade
+Custom CNN (TensorFlow),TensorFlow,Deep Learning,0.901,0.882,0.911,0.922,44.0,2.3M,CPU,EXCELLENT
+ResNet50 Transfer Learning (TensorFlow),TensorFlow,Transfer Learning,0.919,0.942,0.94,0.916,40.9,25.6M,CPU,EXCELLENT
+Logistic Regression (Scikit-learn),Scikit-learn,Traditional ML,0.821,0.979,0.794,0.837,1.4,150K,CPU,GOOD
+Vision Transformer (PyTorch),PyTorch,Transformer,0.904,0.89,0.926,0.897,56.5,86.4M,GPU,EXCELLENT
