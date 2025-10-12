@@ -38,6 +38,7 @@ FINE_TUNE_LR = 1e-5    # New: Lower LR for training the full model (1e-4 / 10)
 # Save/Logging
 CHECKPOINT_PATH = 'vit_chest_xray_best.pth'
 CHECKPOINT_PATH_1 = 'vit_chest_xray_best_1.pth'
+PLOTS_OUTPUT_DIR = 'plots_vit'
 
 # ImageNet means and stds for normalization
 IMAGENET_MEAN = [0.485, 0.456, 0.406]
